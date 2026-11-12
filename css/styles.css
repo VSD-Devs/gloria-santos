@@ -158,14 +158,6 @@ a:focus-visible,
   align-items: center;
 }
 
-.hero__eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--atlantic);
-}
-
 .hero h1 {
   margin: 0 0 1.25rem;
   font-family: var(--font-display);
