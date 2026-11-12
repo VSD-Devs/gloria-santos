@@ -3,7 +3,7 @@
 
   if (!prefersReduced) {
     const sections = document.querySelectorAll(
-      ".story__inner, .journey__step, .author__portrait, .author__content, .details__card, .pullquote blockquote"
+      ".story__inner, .author__portrait, .author__content, .details__card, .pullquote blockquote"
     );
     sections.forEach((el) => el.classList.add("reveal"));
 

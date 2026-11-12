@@ -319,7 +319,7 @@ a:focus-visible,
   margin-bottom: 0;
 }
 
-.story__prose p:first-child::first-letter {
+#histoire .story__prose p:first-child::first-letter {
   float: left;
   margin: 0.08em 0.12em 0 0;
   font-family: var(--font-display);
@@ -329,57 +329,15 @@ a:focus-visible,
   color: var(--atlantic);
 }
 
-/* Journey */
-.journey {
-  padding: clamp(3rem, 8vw, 5rem) var(--space);
+.story--tinted {
   background: color-mix(in srgb, var(--mist) 70%, var(--paper));
 }
 
-.journey__header {
-  max-width: var(--max);
-  margin: 0 auto 2.5rem;
-}
-
-.journey h2 {
-  margin: 0 0 0.5rem;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  color: var(--ink);
-}
-
-.journey__intro {
-  margin: 0;
-  max-width: 42ch;
-  color: var(--ink-soft);
-}
-
-.journey__steps {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1rem, 3vw, 2rem);
-}
-
-.journey__step {
-  padding: 1.5rem 0 0;
-  border-top: 3px solid var(--atlantic);
-}
-
-.journey__step h3 {
-  margin: 0 0 0.65rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--atlantic);
-}
-
-.journey__step p {
-  margin: 0;
-  font-size: 0.98rem;
-  color: var(--ink-soft);
+.story__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
 }
 
 /* Author */
@@ -570,10 +528,6 @@ a:focus-visible,
     grid-template-columns: 1fr;
   }
 
-  .journey__steps {
-    grid-template-columns: 1fr;
-  }
-
   .author__layout {
     grid-template-columns: 1fr;
   }
@@ -636,7 +590,6 @@ a:focus-visible,
   }
 
   .story,
-  .journey,
   .author,
   .details,
   .pullquote {
